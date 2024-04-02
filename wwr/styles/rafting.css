@@ -145,10 +145,10 @@ article p {
     grid-row: 2;
 }
 
-/* .history>p:nth-child(5) { */
-    /* grid-column: 3; */
-    /* grid-row: 3; */
-/* } */
+.history>p:nth-child(5) {
+    grid-column: 3;
+    grid-row: 3;
+}
 
 .adventure {
     display: grid;
