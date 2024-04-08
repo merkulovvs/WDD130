@@ -268,9 +268,9 @@ pre {
 
 .call-to-action a {
     display: block;
-    color: #19535F;
+    color: var(--primary-color);
     font-weight: 700;
-    background-color: lightgray;
+    background-color: var(--secondary-color);
     padding: 20px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
@@ -285,6 +285,7 @@ pre {
 
 table {
   border-collapse: collapse;
+  color: var(--primary-color);
   border: 2px solid rgb(140 140 140);
   font-family: Arial;
   font-size: 1.3rem;
@@ -292,7 +293,7 @@ table {
 }
 
 thead {
-  background-color: rgb(228 240 245);
+    background-color: var(--secondary-color);
 }
 
 th,
