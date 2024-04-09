@@ -38,6 +38,7 @@ header {
     align-items: center;
     justify-items: center;
     border-bottom: 2px solid var(--primary-color);
+    margin: 0;
 }
 
 header img {
@@ -301,6 +302,94 @@ td {
   border: 1px solid rgb(160 160 160);
   padding: 8px 10px;
 }
+
+.homepage {
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-banner {
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+}
+
+.homepage-banner img {
+    width: 100%;
+    opacity: .7;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    /* bottom: 150px; */
+    left: 10px;
+}
+
+.overlay p,
+.overlay h2 {
+    background-color: var(--nav-background-color);
+    opacity: .7;
+    color: black;
+    padding: 10px;
+}
+
+.overlay>h2 {
+    text-align: center;
+}
+
+.banner {
+    max-width: 880px;
+    max-height: 274px;
+    margin: 0;
+}
+
+.homepage-footer {
+    position: fixed;
+    bottom: 0;
+    width: 880px;
+    margin: 0;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.tripsoverview {
+    margin: 0;
+    padding: 0;
+
+}
+
+.tripsoverview>h2 {
+    text-align: center;
+    background-color: var(--nav-background-color);
+    color: black;
+    opacity: .7;
+    padding: 10px;
+    margin: 0;
+}
+
+.ourtrips {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.ourtrips img,
+.ourtrips figcaption,
+.ourtrips a {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 
