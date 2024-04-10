@@ -182,6 +182,7 @@ footer {
     /* width: 100%; */
     justify-content: center;
     align-items: center;
+    margin: 0px;
 }
 
 .sociallinks {
@@ -199,40 +200,55 @@ pre {
 .contactus-main {
     display: grid;
     grid-template-columns: 0.2fr 3fr;
+    grid-template-rows: repeat(3,1fr);
+    margin: 10px 0px 10px 0px;
     /* display: grid; */
     /* grid-template-columns: .7fr 3fr; */
     /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
 .contact-details {
+    grid-column: 1;
+    grid-row: 1/3;
     padding: 0;
     margin: 0;
     /* grid-column: 1/2; */
     /* grid-row: 1/3; */
 }
 
+.map>iframe {
+    width: auto;
+    height: 500px;
+}
+
 .employees {
+    grid-column: 2/3;
+    grid-row: 1;
     padding: 0;
     margin: 0;
+    padding: 0px 0px 2px 0px;
     /* display: flex; */
     /* flex-flow: column; */
     /* flex-wrap: wrap; */
 }
-.employee-pictures{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
+/* .employee-pictures{ */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* margin: 0 auto; */
+/* } */
+
+.h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
 }
 
 .employees h2 {
     width: 100%;
-}
-
-.employees figure {
-    margin: 5px;
-    width: calc(40% - 10px);
-
+    text-align: center;
 }
 
 .employees img, 
@@ -241,6 +257,39 @@ pre {
     width: 100%;
     height: auto;
     margin: 0;
+}
+
+.emppics {
+    display: flex;
+    align-items: flex-end;
+    margin:10px 0px 10px 0px;
+}
+
+.emppics>figure {
+    margin: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column:  2/3;
+    grid-row: 2;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contact-form button {
+    max-width: 300px;
+    min-width: 150px;
+    align-self: center;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+    font-weight: 700;
 }
 
 .trips {
@@ -347,8 +396,8 @@ td {
 }
 
 .homepage-footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     width: 880px;
     margin: 0;
 }
@@ -383,10 +432,16 @@ td {
 }
 
 .ourtrips img,
-.ourtrips figcaption,
 .ourtrips a {
     margin: 0;
     padding: 0;
+}
+
+.ourtrips figcaption {
+    margin: 0;
+    background-color: var(--nav-background-color);
+    color: black;
+    opacity: .7;
 }
 
 

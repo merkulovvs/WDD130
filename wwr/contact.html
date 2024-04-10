@@ -21,45 +21,88 @@
         <main class="contactus-main">
             <aside class="contact-details">
                 <h2>Contact details</h2>
-                <div><pre><strong>address:</strong>White River Rd. 15 
-                    Mountain Rock
-                    1025, UT</pre>
+                <div><pre><strong>address:</strong>Yaroslaviv Val. 15 
+                    Kyiv, 01001
+                    Ukraine</pre>
                 </div>
                 <div>
-                    <p><strong>phone:</strong>+1 800 235235</p>
+                    <p><strong>phone:</strong>+38(044) 235-35-35</p>
                 </div>
                 <div>
                     <p><strong>e-mail:</strong>splash@splash.com</p>
                 </div>
-                <div>
-                    <p><strong>location on map:</strong></p>
+                <div class="map">
+                    <p><strong>find us on map:</strong></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d544.4476959691239!2d30.50908735149429!3d50.45123352832808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5eadbfd89d%3A0xf4a5b0e17f9c2092!2sYaroslaviv%20Val%20St%2C%2015%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sde!4v1712769740438!5m2!1sen!2sde"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>                                
             </aside>
-            <section class="employees">
-                <h2>Our employees</h2>
-                <div class="epmloyee-pictures">
+            <div class="employees">
+                <div class="h2">Our employees</div>
+                <div class="emppics">   
                     <figure>
-                        <img src="images/Image1_rafting53_600.jpg" alt="Olena, Fedorenko">
+                        <img src="images/Instructor1.png" alt="Olena, Fedorenko">
                         <figcaption>Olena, Fedorenko</figcaption>
                     </figure>
+                    <!-- <figure> -->
+                        <!-- <img src="images/Image1_rafting53_600.jpg" alt="Vasyl, Rudenko"> -->
+                        <!-- <figcaption>Vasyl, Rudenko</figcaption> -->
+                    <!-- </figure> -->
                     <figure>
-                        <img src="images/Image1_rafting53_600.jpg" alt="Vasyl, Rudenko">
-                        <figcaption>Vasyl, Rudenko</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/Image1_rafting53_600.jpg" alt="Oleksandr, Sheremet">
+                        <img src="images/Instructor2.png" alt="Oleksandr, Sheremet">
                         <figcaption>Oleksandr, Sheremet</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/Image1_rafting53_600.jpg" alt="Pavlyna, Zaveriukha">
+                        <img src="images/Instructor3.png" alt="Pavlyna, Zaveriukha">
                         <figcaption>Pavlyna, Zaveriukha</figcaption>
-                    </figure>
-                </div>                
-            </section>                 
+                    </figure>               
+                </div>                 
+            </div>
+            <div class="form">
+                <form class="contact-form">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item column2">
+                            <label for="useremail">E-mail:</label>
+                            <input type="email" id="useremail" name="usermail">
+                        </div>
+                        <div class="form-item column1">
+                            <p>What is the purpose of your message?:</p>
+                                <div>
+                                    <input type="radio" id="option1" name="question" value="option1">
+                                    <label for="option1">General Inquiry</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="option2" name="question" value="option2">
+                                    <label for="option2">Reservation Question</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="option3" name="question" value="option3">
+                                    <label for="option3">Website Suggestion</label>
+                                </div>
+                            <div class="form-item">
+                                <textarea name="feedback" id="feedback" rows="4" placeholder="Type your message here"></textarea>
+                            </div>
+                        <div class="form-item column1">
+                            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                            <input type="checkbox" id="subscribe" name="subscribe"><br>
+                        </div>
+                        
+                        
+                        
+                        </div>            
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>    
         </main>
         <footer>
             <p>©2024 | Splash White Water Rafting | Viktor Merkulov | WDD 130 </p>
             <nav class="sociallinks">
+                <a href="images/wireframe-contact-us.png">Wireframe</a>
                 <a href="https://facebook.com">
                     <img src="images/Logo_facebook-128-2.webp" alt="Facebook Logo" height="50">
                 </a>
